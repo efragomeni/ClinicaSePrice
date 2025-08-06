@@ -1,0 +1,694 @@
+.honorarios-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Header con información del médico */
+.doctor-info {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-label {
+  font-size: 12px;
+  color: #6c757d;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-value {
+  font-size: 16px;
+  color: #212529;
+  font-weight: 600;
+}
+
+/* Título y controles */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #212529;
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.category-filter {
+    color: black;
+
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.category-filter:focus {
+  outline: none;
+  border-color: #1e3a8a;
+  box-shadow: 0 0 0 2px rgba(30, 58, 138, 0.1);
+}
+
+.action-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-button.secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.action-button.secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Tabla */
+.table-container {
+  background-color: white;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.honorarios-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.honorarios-table thead {
+  background-color: #f8f9fa;
+}
+
+.honorarios-table th {
+  padding: 16px 12px;
+  font-weight: 600;
+  color: #495057;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+
+  border-bottom: 2px solid #e9ecef;
+}
+
+.honorarios-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 14px;
+  text-align: center;
+  color: #212529;
+}
+
+.honorarios-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.honorarios-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Celdas específicas */
+.codigo-cell {
+  font-family: "Courier New", monospace;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.servicio-cell {
+  font-weight: 500;
+}
+
+.categoria-cell {
+  text-align: center;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.category-badge.consulta {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.category-badge.estudio {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.category-badge.certificación {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.category-badge.control {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.category-badge.evaluación {
+  background-color: #e2e3e5;
+  color: #383d41;
+}
+
+.duracion-cell {
+  text-align: center;
+  color: #6c757d;
+}
+
+.precio-cell {
+  text-align: right;
+  font-weight: 600;
+  color: #28a745;
+  font-size: 15px;
+}
+
+/* Footer de la tabla */
+.table-footer {
+  padding: 16px 20px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.stat-item {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.stat-item strong {
+  color: #212529;
+}
+
+/* Botones de navegación */
+.navigation-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e9ecef;
+}
+
+.navigation-buttons button{
+  width: 250px;
+  font-size: 16px;
+}
+
+/* Estados de carga y error */
+.loading-container,
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  color: #6c757d;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e9ecef;
+  border-top: 4px solid #1e3a8a;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .honorarios-container {
+    padding: 16px;
+  }
+
+  .section-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .controls {
+    justify-content: space-between;
+  }
+
+  .info-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .honorarios-table {
+    font-size: 12px;
+  }
+
+  .honorarios-table th,
+  .honorarios-table td {
+    padding: 12px 8px;
+  }
+
+  .navigation-buttons {
+    flex-direction: column;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+.appointment-container {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.calendar-section {
+  flex: 1;
+  max-width: 300px;
+}
+
+.date-header {
+  background-color: #e9ecef;
+  padding: 12px 16px;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.date-label {
+  display: block;
+  font-size: 12px;
+  color: #6c757d;
+  margin-bottom: 2px;
+}
+
+.selected-date {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #212529;
+}
+
+.calendar {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px 8px;
+  color: #6c757d;
+}
+
+.nav-button:hover {
+  color: #212529;
+}
+
+.month-year {
+  font-size: 14px;
+  font-weight: 500;
+  color: #212529;
+}
+
+.calendar-grid {
+  padding: 16px;
+}
+
+.days-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.day-header {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6c757d;
+  padding: 4px;
+}
+
+.days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.calendar-day {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.calendar-day.clickable {
+  cursor: pointer;
+  color: #212529;
+}
+
+.calendar-day.clickable:hover {
+  background-color: #e9ecef;
+}
+
+.calendar-day.selected {
+  background-color: #1e3a8a;
+  color: white;
+  font-weight: 500;
+}
+
+.calendar-day.empty {
+  color: #dee2e6;
+}
+
+.time-slots-section {
+  flex: 2;
+  max-width: 500px;
+}
+
+.time-slots-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+}
+
+.time-slots-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.time-slot-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.time-text {
+  font-size: 16px;
+  color: #212529;
+  font-weight: 500;
+}
+
+.request-button {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.request-button:hover {
+  background-color: #1e40af;
+}
+
+.request-button:active {
+  background-color: #1d4ed8;
+}
+
+/* Checkbox */
+.checkbox-cell {
+  width: 40px;
+  text-align: center;
+}
+
+.checkbox-cell input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #1e3a8a;
+}
+
+.selected-row {
+  background-color: #e8f4ff !important;
+}
+
+.selected-row:hover {
+  background-color: #d1e9ff !important;
+}
+
+/* Celdas específicas */
+.codigo-cell {
+  font-family: "Courier New", monospace;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.servicio-cell {
+  font-weight: 500;
+}
+
+.categoria-cell {
+  text-align: center;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.category-badge.consulta {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.category-badge.estudio {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.category-badge.certificación {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.category-badge.control {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.category-badge.evaluación {
+  background-color: #e2e3e5;
+  color: #383d41;
+}
+
+.duracion-cell {
+  text-align: center;
+  color: #6c757d;
+}
+
+.precio-cell {
+  text-align: right;
+  font-weight: 600;
+  color: #28a745;
+  font-size: 15px;
+}
+
+/* Footer de la tabla */
+.table-footer {
+  padding: 16px 20px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.stat-item {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.stat-item strong {
+  color: #212529;
+}
+
+.total-amount strong {
+  color: #28a745;
+  font-size: 16px;
+}
+
+/* Botones de navegación */
+.navigation-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e9ecef;
+}
+
+.nav-button {
+  padding: 12px 24px;
+  border: 2px solid #1e3a8a;
+  background-color: transparent;
+  color: #1e3a8a;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav-button:hover {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.nav-button.active {
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.nav-button.pay-button {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: white;
+}
+
+.nav-button.pay-button:hover {
+  background-color: #218838;
+  border-color: #218838;
+}
+
+.nav-button.pay-button.disabled {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .appointment-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .calendar-section,
+  .time-slots-section {
+    max-width: none;
+  }
+}
+
+.no-slots-message {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6c757d;
+}
+
+.no-slots-message p {
+  font-size: 16px;
+  margin: 0;
+}
+
+@media print {
+  .controls,
+  .navigation-buttons {
+    display: none;
+  }
+
+  .honorarios-container {
+    padding: 0;
+  }
+}

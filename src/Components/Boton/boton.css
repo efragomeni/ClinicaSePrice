@@ -1,0 +1,25 @@
+button {
+  width: 160px;
+  height: 33px;
+  border: 1px solid #00214e;
+  border-radius: 10px;
+  background: none;
+  cursor: pointer;
+}
+
+.claro {
+  color: #00214e;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.oscuro {
+  background: #1e3a8a;
+  transition: background-color 0.2s ease;
+
+}
+
+.oscuro:hover:not(:disabled) {
+  background-color: #1e40af;
+  border-color: #1e40af;
+}

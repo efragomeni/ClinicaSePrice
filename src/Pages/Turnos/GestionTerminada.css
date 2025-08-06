@@ -1,0 +1,14 @@
+.contenedor-gestion{
+    text-align: center;
+    height: 65vh;
+    margin-top: 32px;
+}
+
+.contenedor-gestion h2{
+    font-size: 32px;
+
+}
+
+.contenedor-gestion p{
+    font-size: 24px;
+}

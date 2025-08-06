@@ -1,0 +1,16 @@
+/* Diseño de la app global */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+:root {
+  --color-primario:#00214E;
+  --color-fuentes:#000000;  
+  --color-fuentesClaras:#f1f1f1;  
+  --color-fondo: #f1f1f1;
+
+  
+  width: 100%;
+  height: 100vh;
+
+}

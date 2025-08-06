@@ -1,0 +1,136 @@
+{
+  "medico": {
+    "nombre": "Enrique Seprok",
+    "dni": "8.951.384",
+    "matricula": "9001",
+    "especialidad": "Clinica"
+  },
+  "turnos": [
+    {
+      "id": 1,
+      "fecha": "10/06/2025",
+      "hora": "10:00",
+      "paciente": {
+        "nombre": "María González",
+        "dni": "35.123.456",
+        "telefono": "11-5555-1234"
+      },
+      "servicio": "Consulta General",
+      "codigo": "CG001",
+      "precio": 15000,
+      "duracion": "30 min",
+      "cobertura": {
+        "tipo": "Obra Social",
+        "nombre": "OSDE",
+        "plan": "210",
+        "copago": 3000
+      },
+      "estado": "confirmado"
+    },
+    {
+      "id": 2,
+      "fecha": "10/06/2025",
+      "hora": "10:45",
+      "paciente": {
+        "nombre": "Carlos Rodríguez",
+        "dni": "28.987.654",
+        "telefono": "11-5555-5678"
+      },
+      "servicio": "Control Post-Operatorio",
+      "codigo": "CPO007",
+      "precio": 14000,
+      "duracion": "25 min",
+      "cobertura": {
+        "tipo": "Particular",
+        "nombre": null,
+        "plan": null,
+        "copago": 14000
+      },
+      "estado": "confirmado"
+    },
+    {
+      "id": 3,
+      "fecha": "10/06/2025",
+      "hora": "11:15",
+      "paciente": {
+        "nombre": "Ana Martínez",
+        "dni": "42.456.789",
+        "telefono": "11-5555-9012"
+      },
+      "servicio": "Electrocardiograma",
+      "codigo": "ECG003",
+      "precio": 8000,
+      "duracion": "15 min",
+      "cobertura": {
+        "tipo": "Prepaga",
+        "nombre": "Swiss Medical",
+        "plan": "SMG20",
+        "copago": 2000
+      },
+      "estado": "confirmado"
+    },
+    {
+      "id": 4,
+      "fecha": "10/06/2025",
+      "hora": "11:50",
+      "paciente": {
+        "nombre": "Roberto Silva",
+        "dni": "31.654.321",
+        "telefono": "11-5555-3456"
+      },
+      "servicio": "Consulta de Seguimiento",
+      "codigo": "CS002",
+      "precio": 12000,
+      "duracion": "20 min",
+      "cobertura": {
+        "tipo": "Obra Social",
+        "nombre": "IOMA",
+        "plan": "Básico",
+        "copago": 2500
+      },
+      "estado": "confirmado"
+    },
+    {
+      "id": 5,
+      "fecha": "11/06/2025",
+      "hora": "09:00",
+      "paciente": {
+        "nombre": "Laura Fernández",
+        "dni": "39.789.123",
+        "telefono": "11-5555-7890"
+      },
+      "servicio": "Evaluación Pre-Quirúrgica",
+      "codigo": "EPQ008",
+      "precio": 20000,
+      "duracion": "35 min",
+      "cobertura": {
+        "tipo": "Particular",
+        "nombre": null,
+        "plan": null,
+        "copago": 20000
+      },
+      "estado": "confirmado"
+    },
+    {
+      "id": 6,
+      "fecha": "11/06/2025",
+      "hora": "14:30",
+      "paciente": {
+        "nombre": "Diego Morales",
+        "dni": "26.345.678",
+        "telefono": "11-5555-2345"
+      },
+      "servicio": "Certificado Médico",
+      "codigo": "CM004",
+      "precio": 5000,
+      "duracion": "10 min",
+      "cobertura": {
+        "tipo": "Prepaga",
+        "nombre": "Medicus",
+        "plan": "Gold",
+        "copago": 1000
+      },
+      "estado": "confirmado"
+    }
+  ]
+}

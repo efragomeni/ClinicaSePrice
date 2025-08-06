@@ -1,0 +1,74 @@
+{
+  "medico": {
+    "nombre": "Enrique Seprok",
+    "dni": "8.951.384",
+    "matricula": "9001",
+    "especialidad": "Clinica"
+  },
+  "honorarios": [
+    {
+      "id": 1,
+      "servicio": "Consulta General",
+      "codigo": "CG001",
+      "precio": 15000,
+      "duracion": "30 min",
+      "categoria": "Consulta"
+    },
+    {
+      "id": 2,
+      "servicio": "Consulta de Seguimiento",
+      "codigo": "CS002",
+      "precio": 12000,
+      "duracion": "20 min",
+      "categoria": "Consulta"
+    },
+    {
+      "id": 3,
+      "servicio": "Electrocardiograma",
+      "codigo": "ECG003",
+      "precio": 8000,
+      "duracion": "15 min",
+      "categoria": "Estudio"
+    },
+    {
+      "id": 4,
+      "servicio": "Certificado Médico",
+      "codigo": "CM004",
+      "precio": 5000,
+      "duracion": "10 min",
+      "categoria": "Certificación"
+    },
+    {
+      "id": 5,
+      "servicio": "Consulta Domiciliaria",
+      "codigo": "CD005",
+      "precio": 25000,
+      "duracion": "45 min",
+      "categoria": "Consulta"
+    },
+    {
+      "id": 6,
+      "servicio": "Interconsulta",
+      "codigo": "IC006",
+      "precio": 18000,
+      "duracion": "40 min",
+      "categoria": "Consulta"
+    },
+    {
+      "id": 7,
+      "servicio": "Control Post-Operatorio",
+      "codigo": "CPO007",
+      "precio": 14000,
+      "duracion": "25 min",
+      "categoria": "Control"
+    },
+    {
+      "id": 8,
+      "servicio": "Evaluación Pre-Quirúrgica",
+      "codigo": "EPQ008",
+      "precio": 20000,
+      "duracion": "35 min",
+      "categoria": "Evaluación"
+    }
+  ]
+}

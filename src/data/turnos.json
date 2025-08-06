@@ -1,0 +1,43 @@
+{
+  "turnos": [
+    {
+      "id": 1,
+      "especialidad": "Cardiología",
+      "medicos": [
+        { "nombre": "Dr. Juan Pérez" },
+        { "nombre": "Dra. María López" }
+      ]
+    },
+    {
+      "id": 2,
+      "especialidad": "Dermatología",
+      "medicos": [
+        { "nombre": "Dra. Carla Gómez" },
+        { "nombre": "Dr. Ricardo Méndez" }
+      ]
+    },
+    {
+      "id": 3,
+      "especialidad": "Clínica Médica",
+      "medicos": [
+        { "nombre": "Dr. Sebastián Torres" },
+        { "nombre": "Dra. Laura Fernández" }
+      ]
+    },
+    {
+      "id": 4,
+      "especialidad": "Pediatría",
+      "medicos": [
+        { "nombre": "Dra. Ana Ruiz" },
+        { "nombre": "Dr. Martín Salas" }
+      ]
+    },
+    {
+      "id": 5,
+      "especialidad": "Neurología",
+      "medicos": [
+        { "nombre": "Dr. Luis Romero" }
+      ]
+    }
+  ]
+}

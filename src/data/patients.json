@@ -1,0 +1,62 @@
+{
+  "patients": [
+    {
+      "id": 1,
+      "name": "BARTOLO SIMS",
+      "dni": "12.951.384",
+      "convenio": "-",
+      "plan": "-",
+      "nroAfiliado": "-",
+      "appointments": [
+        {
+          "id": 1,
+          "fecha": "10/06/2025",
+          "especialidad": "Dermatología",
+          "profesional": "Dr. García",
+          "motivo": "CONSULTA"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "MARÍA GONZÁLEZ",
+      "dni": "25.123.456",
+      "convenio": "OSDE",
+      "plan": "210",
+      "nroAfiliado": "123456789",
+      "appointments": [
+        {
+          "id": 2,
+          "fecha": "15/06/2025",
+          "especialidad": "Cardiología",
+          "profesional": "Dr. Rodríguez",
+          "motivo": "CONTROL"
+        },
+        {
+          "id": 3,
+          "fecha": "20/06/2025",
+          "especialidad": "Traumatología",
+          "profesional": "Dr. López",
+          "motivo": "CONSULTA"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "JUAN PÉREZ",
+      "dni": "18.987.654",
+      "convenio": "Swiss Medical",
+      "plan": "SMG01",
+      "nroAfiliado": "987654321",
+      "appointments": [
+        {
+          "id": 4,
+          "fecha": "12/06/2025",
+          "especialidad": "Oftalmología",
+          "profesional": "Dra. Martínez",
+          "motivo": "REVISIÓN"
+        }
+      ]
+    }
+  ]
+}

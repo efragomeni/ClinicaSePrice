@@ -1,0 +1,41 @@
+.container-cards-autogestion {
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.cards-autogestion {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #cdcdcd;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  align-items: center;
+}
+
+.cards-autogestion button {
+  margin: 50px auto auto;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+
+  color: black;
+
+  cursor: pointer;
+}
+
+.cards-autogestion img {
+  width: 100px;
+  height: 100px;
+}
+
+.cards-autogestion button p{
+  font-size: 24px;
+}

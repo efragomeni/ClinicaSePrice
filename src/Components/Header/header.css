@@ -1,0 +1,16 @@
+.containerHeader {
+  width: 100%;
+  height: 50px;
+  background-color: var(--color-primario);
+  color: var(--color-fuentesClaras);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.slogan {
+  padding: 16px;
+}
+.redes {
+  padding: 16px;
+}

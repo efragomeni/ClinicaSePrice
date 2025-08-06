@@ -1,0 +1,72 @@
+.container-login {
+  width: 486px;
+  height: 66.2vh;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex: 1;
+}
+.subcontainer-login {
+  height: 100%;
+  /* width: 486px; */
+  border: 1px solid #cdcdcd;
+
+  /* border: 1px solid red; */
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  /* margin-bottom: 16px; */
+}
+.container-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+a {
+  color: blue;
+}
+.inputs {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.inputs input {
+  background: none;
+  border-radius: 8px;
+  border: 1px solid #cdcdcd;
+  width: 324px;
+  height: 24px;
+  color: black;
+  padding: 12px;
+}
+.password-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  height: 50px;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  padding: 12px;
+}
+.password-container input {
+  border: none;
+  background: none;
+  outline: none;
+  flex: 1;
+}
+.ver-password-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 14px;
+}
